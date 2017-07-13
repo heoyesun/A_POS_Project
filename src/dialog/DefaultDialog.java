@@ -18,10 +18,10 @@ public class DefaultDialog extends JDialog {
 		screen_width = _width;
 		screen_height = _height;
 		
-		setModal(true);//팝업창이 열려있을경우 다른화면에서 실행X=true. 실행O=false
+		setModal(true);
 		setLayout(new BorderLayout());
 		setSize(screen_width, screen_height);
-		setResizable(false);//크기조절불가능하도록
+		setResizable(false);
 	}
 	
 }
