@@ -18,8 +18,8 @@ public class MenuManagePanel extends DefaultPane {
 
 	private JSplitPane totalPanel		= new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
 	
-	private JPanel leftPanel				= new JPanel(new BorderLayout());				//table
-	private JPanel rightPanel				= new JPanel(new BorderLayout());				//detail info
+	private JPanel leftPanel				= new JPanel(new BorderLayout());		//table
+	private JPanel rightPanel				= new JPanel(new BorderLayout());		//detail info
 	
 	//left
 	private JTable menuTable		= new JTable();
@@ -47,6 +47,7 @@ public class MenuManagePanel extends DefaultPane {
 		setLeft();
 		setRight();
 		
+		totalPanel.setDividerSize(0);
 		totalPanel.setResizeWeight(0.9);
 		this.setRightComponent(totalPanel);
 	}

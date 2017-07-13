@@ -57,7 +57,7 @@ public class MainFrame extends JFrame {
 		setVisible(true);
 	}
 	
-	public void changePanel(int panelNumber) {
+	public void changePanel(int panelNumber) { 
 		getContentPane().removeAll();
 		getContentPane().add(panels.get(panelNumber));
 		revalidate();

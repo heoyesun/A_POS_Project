@@ -116,7 +116,7 @@ public class JoinDialog extends DefaultDialog {
 				
 				
 				for(int i = 0 ; i < saved_IDlist.size() ; i++) 
-					if(saved_IDlist.get(i).equals(name)) 
+					if(saved_IDlist.get(i).equals(id)) 
 						isJoined = true;
 			
 				if(!isJoined) {
@@ -133,7 +133,7 @@ public class JoinDialog extends DefaultDialog {
 	};
 	
 	private void clearComponent() {
-		nameField.setText("");
+		nameField.setText("");//다시 공백상태로 만드는.
 		idField.setText("");
 		pwField.setText("");
 	}
